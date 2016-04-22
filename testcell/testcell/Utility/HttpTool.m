@@ -19,6 +19,9 @@
     //设置加载时间
     mgr.requestSerializer.timeoutInterval = 10.0f;
     
+    //设置请求类型
+    mgr.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json",@"text/html", nil];
+    
     [mgr GET:url parameters:parameters progress:^(NSProgress * _Nonnull downloadProgress) {
         nil;
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {

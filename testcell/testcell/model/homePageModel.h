@@ -10,9 +10,10 @@
 
 @interface homePageModel : JSONModel
 //限时抢购-->collectionView所需要的数据
-@property (nonatomic,copy)NSString<Optional> *flashSaleImageUrl;
-@property (nonatomic,copy)NSString<Optional> *flashSaleTitle;
-@property (nonatomic,copy)NSString<Optional> *flashSalePrice;
+@property (nonatomic,copy)NSString<Optional> *timeStamp;//限时时间戳
+@property (nonatomic,copy)NSString<Optional> *titlepic;
+@property (nonatomic,copy)NSString<Optional> *title;
+@property (nonatomic,copy)NSString<Optional> *FavoriteNum;
 //限时抢购KV imageURL
 @property (nonatomic,copy)NSArray<Optional> *flashSaleKVImageUrlArray;
 

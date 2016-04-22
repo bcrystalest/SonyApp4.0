@@ -35,7 +35,7 @@
 //    __weak typeof(self) ws = self;
     
     TBDataModel *d1_1 = [TBDataModel new];
-    d1_1.image = @"p1-11";
+
 
     UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 320)];
     

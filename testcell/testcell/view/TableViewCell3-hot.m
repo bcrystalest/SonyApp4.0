@@ -114,17 +114,12 @@
     MyFloatLayout *imageLayout = [MyFloatLayout floatLayoutWithOrientation:MyLayoutViewOrientation_Horz];
     
     UILabel *priceLabel = [UILabel new];
-    priceLabel.text = dataModel.price;
-    priceLabel.font = [UIFont systemFontOfSize:11];
-    priceLabel.textColor = [UIColor redColor];
-    priceLabel.myLeftMargin = 5;
-    priceLabel.myBottomMargin = 5;
-    [priceLabel sizeToFit];
-    priceLabel.reverseFloat = YES;
-    [imageLayout addSubview:priceLabel];
+    _priceLabel = priceLabel;
+    
+    [imageLayout addSubview:_priceLabel];
     
     UILabel *titleLabel = [UILabel new];
-    titleLabel.text = dataModel.title;
+    titleLabel.text = @"123";
     titleLabel.font = [UIFont systemFontOfSize:11];
     titleLabel.textColor = [UIColor lightGrayColor];
     titleLabel.myLeftMargin = 5;

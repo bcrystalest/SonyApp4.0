@@ -10,4 +10,5 @@
 #import "MyLayout.h"
 @interface TableViewCell2_MylinerLayout : UITableViewCell
 @property(nonatomic, strong) MyLinearLayout *rootLayout;
+@property(nonatomic, strong) NSString *image;
 @end
